@@ -3,27 +3,22 @@ body{
 }
 
 .navbar {
-    background-color: #000000;
-    border-bottom: 0.5vh solid #e23434;
+    background-color: #1D1D1D;
+    border-bottom: 0.5vh solid #ffa928;
     transition: all ease 1s;
 }
 
 
 /* home page */
 #home {
+    background-color: #1D1D1D;
     color: #a3a3a3;
     position: relative;
     height: 100vh;
 }
 
 #myname {
-    color: #e23434;
-}
-
-canvas {
-    position: absolute;
-    background-color: #000000;
-    z-index: -1;
+    color: #ffa928;
 }
 
 #showme {
@@ -36,8 +31,8 @@ canvas {
 
 #showme:hover {
     transition-duration: 1s;
-    background-color: #e23434;
-    border-color: #e23434;
+    background-color: #ffa928;
+    border-color: #ffa928;
 }
 
 #amore {
@@ -52,13 +47,12 @@ canvas {
 
 /* about page */
 #about{
+    background-color: #1D1D1D;
     position: relative;
-    background-color: #1b1b1b;
     height: auto;
     padding-bottom: 20vh;
     color: #a3a3a3;
     padding-bottom: 30vh;
-    border-bottom: solid 0.5vh #e23434;
 }
 
 #section {
@@ -71,15 +65,6 @@ canvas {
     height: 24vh;
     margin: 0px auto;
     border-bottom: 0.7vh solid #a3a3a3;
-}
-
-#abouttags {
-    margin-top: 30vh;
-}
-
-.ab {
-    color: #14bdc9;
-    font-size: 5vw;
 }
 
 #aboutinfo {
@@ -97,32 +82,17 @@ canvas {
 
 .graph-label {
     width: 7vw;
-    background-color: #14bdc9;
+    background-color: #ffa928;
 }
 
 
 /* portfolio page */
 #portfolio{
+    background-color: #1D1D1D;
     position: relative;
-    background-color: #1b1b1b;
     height: auto;
     padding-bottom: 20vh;
     color: #a3a3a3;
-}
-
-#portfolio:after {
-    content:'';
-    position: absolute;
-    z-index: 10;
-    top: 100%;
-    left: 0;
-    right: 0;
-    margin: 0 auto;
-    width: 0;
-    height: 0;
-    border-top: solid 10vh #1b1b1b;
-    border-left: solid 49vw transparent;
-    border-right: solid 49vw transparent;
 }
 
 #projects {
@@ -131,7 +101,7 @@ canvas {
 
 .project {
     position: relative;
-    border: 5px solid #14bdc9;
+    border: 5px solid #ffa928;
 }
 
 .layer:hover {
@@ -163,8 +133,8 @@ canvas {
 
 /* contact page */
 #contact {
+    background-color: #1D1D1D;
     position: relative;
-    background-color: #e23434;
     height: auto;
     padding-bottom: 25vh;
     color: #a3a3a3;
@@ -184,29 +154,31 @@ canvas {
     height: 6vh;
 }
 
+#sbtn {
+    background-color: #5a5a5a;
+}
+
 #totop {
     position: relative;
     z-index: 10;
-    margin-top: -3vh;
-    margin-bottom: -4vh;
 }
 
 #scrollup {
     color: #a3a3a3;
-    font-size: 3vw;
+    font-size: 4vw;
 }
 
 #scrollup:hover {
     transition-duration: 1s;
     transform: scale(1.5);
-    color: #14bdc9;
+    color: #ffa928;
 }
 
 #footer {
     height: auto;
     padding-top: 15vh;
-    padding-bottom: 15vh;
-    background-color: #000000;
+    padding-bottom: 1vh;
+    background-color: #1D1D1D;
 }
 
 .link {

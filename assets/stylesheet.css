@@ -8,11 +8,15 @@ body{
     transition: all ease 1s;
 }
 
+.nav-link {
+    color: #424242;
+}
+
 
 /* home page */
 #home {
     background-color: #1D1D1D;
-    color: #a3a3a3;
+    color: #FFFF;
     position: relative;
     height: 100vh;
 }
@@ -22,25 +26,28 @@ body{
 }
 
 #showme {
+    transition: all 1s;
+    background-color: transparent;
+    border: solid 0.5vh #424242;
+    animation-name: mouseoff;
     margin-top: 2vh;
-    background: transparent;
-    border: solid 0.5vh #a3a3a3;
-    color: #a3a3a3;
+    color: #424242;
     transform: scale(1.2);
 }
 
 #showme:hover {
-    transition-duration: 1s;
     background-color: #ffa928;
     border-color: #ffa928;
+    transition: all 1s;
 }
 
 #amore {
+    transition: all 1s;
     margin-left: 0.5vw;
 }
 
 #showme:hover #amore {
-    transition-duration: 1s;
+    transition: all 1s;
     transform: rotate(90deg);
 }
 
@@ -50,36 +57,64 @@ body{
     background-color: #1D1D1D;
     position: relative;
     height: auto;
-    color: #a3a3a3;
+    color: #424242;
     padding-bottom: 20vh;
 }
 
 #section {
     font-size: 3vw;
+    visibility: visible;
 }
 
-#line {
+/* lines */
+
+#abline {
+    transition-duration: 1s;
     padding-top: 15vh;
-    width: 5vw;
-    border-bottom: 0.7vh solid #a3a3a3;
+    width: 20vw;
+    border-bottom: none;
 }
+
+#poline {
+    transition-duration: 1s;
+    padding-top: 15vh;
+    width: 20vw;
+    border-bottom: none;
+}
+
+#coline {
+    transition-duration: 1s;
+    padding-top: 15vh;
+    width: 20vw;
+    border-bottom: none;
+}
+
+/* end of lines */
 
 #aboutinfo {
     margin-top: 15vh;
 }
 
+#blurb {
+    color: #FFFF;
+}
+
 .graph {
     height: 4.2vh;
     width: 100%;
-    background-color: #a3a3a3;
+    background-color: #424242;
     margin: auto;
     margin-top: 2vh;
-    color: black;
+    color: #424242;
 }
 
 .graph-label {
     min-width: 7vw;
     background-color: #ffa928;
+}
+
+.perc {
+    color: #FFFF;
 }
 
 
@@ -89,7 +124,7 @@ body{
     position: relative;
     height: auto;
     padding-bottom: 20vh;
-    color: #a3a3a3;
+    color: #424242;
 }
 
 #projects {
@@ -134,7 +169,7 @@ body{
     position: relative;
     height: auto;
     padding-bottom: 25vh;
-    color: #a3a3a3;
+    color: #424242;
 }
 
 #contactform{
@@ -147,6 +182,7 @@ body{
     margin: auto;
     margin-bottom: 0.8vh;
     width: 40vw;
+    color: #848484;
 }
 
 .inputs:focus {
@@ -164,11 +200,11 @@ body{
 }
 
 #sbtn {
-    background-color: #ffa928;
-    border: none;
+    background-color: transparent;
+    border: 0.5vh solid #ffa928;
     outline: none;
     height: auto;
-    color: #2B2B2B;
+    color: #ffa928;
 }
 
 .sbtn {
@@ -181,7 +217,7 @@ body{
 }
 
 #scrollup {
-    color: #a3a3a3;
+    color: #424242;
     font-size: 4vw;
 }
 
@@ -199,7 +235,7 @@ body{
 }
 
 .link {
-    color: #a3a3a3;
+    color: #424242;
     font-size: xx-large;
     padding-left: 2vw;
 }

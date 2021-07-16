@@ -32,14 +32,26 @@ function setActiveOnClick(name){
 function setActiveOnScroll(){
   var divs = ['home', 'about', 'portfolio', 'contact'];
   var tabs = ['ho', 'ab', 'po', 'co'];
+  var lines = ['no', 'abline', 'poline', 'coline'];
 
   for(i in divs){
     var ele = document.getElementById(tabs[i]);
+    var line = document.getElementById(lines[i]);
     var div = document.getElementById(divs[i]).getBoundingClientRect();
     if(div.top <= 5 && div.bottom >= 5){
       ele.classList.add('active');
+
+      if (lines[i] != 'no'){
+        line.style.borderBottom = '0.5vw solid #424242';
+        setTimeout(resizeLine, 100, line);
+      }
+
     } else {
       ele.classList.remove('active');
     }
   }
+}
+
+function resizeLine(line){
+  line.style.width = '5vw';
 }

@@ -50,9 +50,8 @@ body{
     background-color: #1D1D1D;
     position: relative;
     height: auto;
-    padding-bottom: 20vh;
     color: #a3a3a3;
-    padding-bottom: 30vh;
+    padding-bottom: 20vh;
 }
 
 #section {
@@ -62,18 +61,16 @@ body{
 #line {
     padding-top: 15vh;
     width: 5vw;
-    height: 24vh;
-    margin: 0px auto;
     border-bottom: 0.7vh solid #a3a3a3;
 }
 
 #aboutinfo {
-    margin-top: 30vh;
+    margin-top: 15vh;
 }
 
 .graph {
-    height: 3.7vh;
-    width: 35vw;
+    height: 4.2vh;
+    width: 100%;
     background-color: #a3a3a3;
     margin: auto;
     margin-top: 2vh;
@@ -81,7 +78,7 @@ body{
 }
 
 .graph-label {
-    width: 7vw;
+    min-width: 7vw;
     background-color: #ffa928;
 }
 
@@ -145,17 +142,37 @@ body{
 }
 
 .inputs {
+    border: none;
+    background-color: #2B2B2B;
     margin: auto;
-    margin-bottom: 0.6vh;
-    width: 32vw;
+    margin-bottom: 0.8vh;
+    width: 40vw;
+}
+
+.inputs:focus {
+    outline: none;
+    border-bottom: 0.5vh solid #ffa928;
 }
 
 .not-text {
     height: 6vh;
 }
 
+.btnrow {
+    margin: auto;
+    width: 40vw;
+}
+
 #sbtn {
-    background-color: #5a5a5a;
+    background-color: #ffa928;
+    border: none;
+    outline: none;
+    height: auto;
+    color: #2B2B2B;
+}
+
+.sbtn {
+    width: 20vw;
 }
 
 #totop {

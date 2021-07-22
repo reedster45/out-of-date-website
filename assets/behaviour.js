@@ -33,17 +33,22 @@ function setActiveOnScroll(){
   var divs = ['home', 'about', 'portfolio', 'contact'];
   var tabs = ['ho', 'ab', 'po', 'co'];
   var lines = ['no', 'abline', 'poline', 'coline'];
+  var headers = ['no', 'absection', 'posection', 'cosection'];
+  var content = ['no', 'aboutinfo', 'projects', 'contactform'];
 
   for(i in divs){
+    var div = document.getElementById(divs[i]).getBoundingClientRect();
     var ele = document.getElementById(tabs[i]);
     var line = document.getElementById(lines[i]);
-    var div = document.getElementById(divs[i]).getBoundingClientRect();
-    if(div.top <= 5 && div.bottom >= 5){
+    var header = document.getElementById(headers[i]);
+    var cont = document.getElementById(content[i]);
+    
+    if(div.top <= 120 && div.bottom >= 120){
       ele.classList.add('active');
 
       if (lines[i] != 'no'){
-        line.style.borderBottom = '0.5vw solid #424242';
-        setTimeout(resizeLine, 100, line);
+        addHeader(header, line, cont);
+        addContent(headers[i], cont);
       }
 
     } else {
@@ -52,6 +57,26 @@ function setActiveOnScroll(){
   }
 }
 
+function addHeader(header, line, cont){
+  header.style.color = '#424242';
+  line.style.borderBottom = '0.5vw solid #424242';
+  setTimeout(resizeLine, 100, line);
+}
+
 function resizeLine(line){
   line.style.width = '5vw';
+}
+
+function addContent(header, cont){
+  cont.style.opacity = '1';
+
+  if (header == 'absection') {
+    document.getElementById('graphs').classList.add('come-in-right');
+    document.getElementById('blurb').classList.add('come-in-left');
+  } else if (header == 'posection') {
+    document.getElementById('projects').classList.add('come-in-up');
+  } else if (header == 'cosection') {
+    document.getElementById('contactinput').classList.add('come-in-left');
+    document.getElementById('sendbtn').classList.add('come-in-right');
+  }
 }

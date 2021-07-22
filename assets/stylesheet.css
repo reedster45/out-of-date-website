@@ -1,7 +1,5 @@
-body{
-    overflow-x: hidden;
-}
 
+/* navbar */
 .navbar {
     background-color: #1D1D1D;
     border-bottom: 0.5vh solid #ffa928;
@@ -52,6 +50,53 @@ body{
 }
 
 
+
+/* lines & headers */
+
+#absection {
+    transition: all 1s;
+    font-size: 3vw;
+    color: #1D1D1D;
+}
+
+#abline {
+    transition: all 1s;
+    padding-top: 15vh;
+    width: 20vw;
+    border-bottom: 0.5vw solid transparent;
+}
+
+#posection {
+    transition: all 1s;
+    font-size: 3vw;
+    color: #1D1D1D;
+}
+
+#poline {
+    transition: all 1s;
+    padding-top: 15vh;
+    width: 20vw;
+    border-bottom: 0.5vw solid transparent;
+}
+
+#cosection {
+    transition: all 1s;
+    font-size: 3vw;
+    color: #1D1D1D;
+}
+
+#coline {
+    transition: all 1s;
+    padding-top: 15vh;
+    width: 20vw;
+    border-bottom: 0.5vw solid transparent;
+}
+
+/* end of lines & headers */
+
+
+
+
 /* about page */
 #about{
     background-color: #1D1D1D;
@@ -61,38 +106,10 @@ body{
     padding-bottom: 20vh;
 }
 
-#section {
-    font-size: 3vw;
-    visibility: visible;
-}
-
-/* lines */
-
-#abline {
-    transition-duration: 1s;
-    padding-top: 15vh;
-    width: 20vw;
-    border-bottom: none;
-}
-
-#poline {
-    transition-duration: 1s;
-    padding-top: 15vh;
-    width: 20vw;
-    border-bottom: none;
-}
-
-#coline {
-    transition-duration: 1s;
-    padding-top: 15vh;
-    width: 20vw;
-    border-bottom: none;
-}
-
-/* end of lines */
-
 #aboutinfo {
+    transition: all 1s;
     margin-top: 15vh;
+    opacity: 0;
 }
 
 #blurb {
@@ -118,6 +135,8 @@ body{
 }
 
 
+
+
 /* portfolio page */
 #portfolio{
     background-color: #1D1D1D;
@@ -128,38 +147,32 @@ body{
 }
 
 #projects {
+    transition: all 1s;
     margin-top: 20vh;
+    opacity: 0;
 }
 
 .project {
+    position: absolute;
+    transition: all 1s;
     position: relative;
     border: 5px solid #ffa928;
+    padding-bottom: 40vh;
 }
 
-.layer:hover {
-    transition-duration: 1s;
+.project:hover {
     background-color: #a3a3a359;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
 }
 
 .stext {
     visibility: hidden;
 }
 
-.layer:hover .stext {
-    transition-duration: 1s;
+.project:hover .stext {
     visibility: visible;
     margin: auto;
 }
 
-.padder {
-    width: 20vw;
-    padding-bottom: 40vh;
-}
 
 
 
@@ -173,7 +186,9 @@ body{
 }
 
 #contactform{
+    transition: all 1s;
     margin-top: 7vh;
+    opacity: 0;
 }
 
 .inputs {
@@ -200,6 +215,7 @@ body{
 }
 
 #sbtn {
+    transition: all 1s;
     background-color: transparent;
     border: 0.5vh solid #ffa928;
     outline: none;
@@ -209,6 +225,11 @@ body{
 
 .sbtn {
     width: 20vw;
+}
+
+#sbtn:hover{
+    background-color: #ffa928;
+    color: #424242;
 }
 
 #totop {
@@ -222,7 +243,7 @@ body{
 }
 
 #scrollup:hover {
-    transition-duration: 1s;
+    transition: all 1s;
     transform: scale(1.5);
     color: #ffa928;
 }
@@ -238,4 +259,39 @@ body{
     color: #424242;
     font-size: xx-large;
     padding-left: 2vw;
+}
+
+
+
+
+/* slide in animations */
+.come-in-right {
+    transform: translateX(150px);
+    animation: come-in 0.8s ease forwards;
+}
+
+.come-in-right:nth-child(odd) {
+    animation-duration: 0.6s; /* So they look staggered */
+}
+
+.come-in-left {
+    transform: translateX(-150px);
+    animation: come-in 0.8s ease forwards;
+}
+
+.come-in-left:nth-child(odd) {
+    animation-duration: 0.6s; /* So they look staggered */
+}
+
+.come-in-up {
+    transform: translateY(150px);
+    animation: come-in 0.8s ease forwards;
+}
+
+.come-in-up:nth-child(odd) {
+    animation-duration: 0.6s; /* So they look staggered */
+}
+
+@keyframes come-in {
+    to { transform: translate(0); }
 }

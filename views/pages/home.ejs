@@ -1,14 +1,13 @@
 <%- include('../partials/header.ejs') %>
 
-<!-- move social media links to home page on left side -->
-<!-- fix mobile version spacing -->
+<!-- make content animate into page on scroll -->
 
 <!-- home page -->
     <div id="home" class="d-flex flex-column container-fluid justify-content-center align-items-center text-center">
         <h1>Hello, I'm <span id="myname">Reed Tyhuis</span>.<br>
         I'm a software developer. </h1>
 
-        <button id="showme" type="button" class="py-1">See more<i id="amore" class="fas fa-arrow-right"></i></button>
+        <button id="showme" type="button" class="py-1 px-4">View my work<i id="amore" class="fas fa-arrow-right"></i></button>
     </div>
 
 
@@ -34,7 +33,7 @@
 <!-- about page -->
     <div id="about" class="container-fluid">
         <div id="abline" class="d-flex container justify-content-center">
-            <h1 id="section"><b>ABOUT</b></h1>
+            <h1 id="absection"><b>ABOUT</b></h1>
         </div>
 
         <div id="aboutinfo" class="container">
@@ -50,7 +49,7 @@
                 </div>
 
                 <div class="col-md-12 col-lg-6">
-                    <div class="d-flex flex-column align-content-center text-center">
+                    <div id="graphs" class="d-flex flex-column align-content-center text-center">
                         <div class="d-flex flex-row graph">
                             <div class="graph-label"><p>HTML</p></div>
                             <div class="graph-bar"></div>
@@ -115,22 +114,22 @@
 <!-- portfolio page -->
     <div id="portfolio" class="container-fluid">
         <div id="poline" class="d-flex container justify-content-center">
-            <h1 id="section"><b>PROJECTS</b></h1>
+            <h1 id="posection"><b>PROJECTS</b></h1>
         </div>
 
         <div id="projects" class="container">
             <div class="row justify-content-center">
-                <div class="col-xs-12 col-sm-6 col-lg-3 d-flex align-items-center project">
-                    <div class="padder layer text-center"><p class="stext">Coming Soon.</p></div>
+                <div class="col-xs-12 col-sm-6 col-lg-3 d-flex project">
+                    <p class="stext">Coming Soon.</p>
                 </div>
-                <div class="col-xs-12 col-sm-6 col-lg-3 d-flex align-items-center project">
-                    <div class="padder layer text-center"><p class="stext">Coming Soon.</p></div>
+                <div class="col-xs-12 col-sm-6 col-lg-3 d-flex project">
+                    <p class="stext">Coming Soon.</p>
                 </div>
-                <div class="col-xs-12 col-sm-6 col-lg-3 d-flex align-items-center project">
-                    <div class="padder layer text-center"><p class="stext">Coming Soon.</p></div>
+                <div class="col-xs-12 col-sm-6 col-lg-3 d-flex project">
+                    <p class="stext">Coming Soon.</p>
                 </div>
-                <div class="col-xs-12 col-sm-6 col-lg-3 d-flex align-items-center project">
-                    <div class="padder layer text-center"><p class="stext">Coming Soon.</p></div>
+                <div class="col-xs-12 col-sm-6 col-lg-3 d-flex project">
+                    <p class="stext">Coming Soon.</p>
                 </div>
             </div>
         </div>
@@ -141,19 +140,19 @@
  <!-- contact page -->
     <div id="contact" class="container-fluid text-center">
         <div id="coline" class="d-flex container justify-content-center c">
-            <h1 id="section"><b>CONTACT</b></h1>
+            <h1 id="cosection"><b>CONTACT</b></h1>
         </div>
 
         <div id="contactform" class="container">
-            <div class="d-flex flex-column justify-content-center">
+            <div id="contactinput" class="d-flex flex-column justify-content-center">
                 <p class="mb-1">Have a question?</p>
                 <input type="email" class="inputs not-text" placeholder="Name">
                 <input type="email" class="inputs not-text" placeholder="Email address">
                 <textarea rows="6" class="inputs" placeholder="Type message..."></textarea>
-                <div class="d-flex flex-row btnrow">
-                    <div class="sbtn"></div>
-                    <button id="sbtn" type="button" class="sbtn py-3">SEND  <i class="far fa-paper-plane"></i></button>
-                </div>
+            </div>
+            <div id="sendbtn" class="d-flex flex-row btnrow">
+                <div class="sbtn"></div>
+                <button id="sbtn" type="button" class="sbtn py-3">SEND  <i class="far fa-paper-plane"></i></button>
             </div>
         </div>
     </div>

@@ -170,7 +170,6 @@
 
 .project:hover .stext {
     visibility: visible;
-    margin: auto;
 }
 
 
@@ -196,7 +195,7 @@
     background-color: #2B2B2B;
     margin: auto;
     margin-bottom: 0.8vh;
-    width: 40vw;
+    width: 60%;
     color: #848484;
 }
 
@@ -211,7 +210,7 @@
 
 .btnrow {
     margin: auto;
-    width: 40vw;
+    width: 60%;
 }
 
 #sbtn {
@@ -224,7 +223,7 @@
 }
 
 .sbtn {
-    width: 20vw;
+    width: 40%;
 }
 
 #sbtn:hover{

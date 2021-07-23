@@ -1,6 +1,11 @@
 <%- include('../partials/header.ejs') %>
 
-<!-- make content animate into page on scroll -->
+<!-- make contact form send email to me
+    add database?
+    add projects
+    make blurb
+    fill in graphs
+    home page background???? -->
 
 <!-- home page -->
     <div id="home" class="d-flex flex-column container-fluid justify-content-center align-items-center text-center">
@@ -12,18 +17,13 @@
 
 
     <!-- navbar -->
-    <nav id="navbar" class="navbar navbar-expand-lg navbar-dark py-1 sticky-top">
+    <nav id="navbar" class="navbar navbar-expand navbar-dark py-1 sticky-top">
         <div id="navboi" class="container">
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                <div class="navbar-nav">
-                    <a id="ho" class="nav-link mx-4 active" href="#home">HOME</a>
-                    <a id="ab" class="nav-link mx-4" href="#about">ABOUT</a>
-                    <a id="po" class="nav-link mx-4" href="#portfolio">PORTFOLIO</a>
-                    <a id="co" class="nav-link mx-4" href="#contact">CONTACT</a>
-                </div>
+            <div class="navbar-nav">
+                <a id="ho" class="nav-link mx-3 active" href="#home">HOME</a>
+                <a id="ab" class="nav-link mx-3" href="#about">ABOUT</a>
+                <a id="po" class="nav-link mx-3" href="#portfolio">PORTFOLIO</a>
+                <a id="co" class="nav-link mx-3" href="#contact">CONTACT</a>
             </div>
         </div>
     </nav>
@@ -143,17 +143,19 @@
             <h1 id="cosection"><b>CONTACT</b></h1>
         </div>
 
-        <div id="contactform" class="container">
-            <div id="contactinput" class="d-flex flex-column justify-content-center">
-                <p class="mb-1">Have a question?</p>
-                <input type="email" class="inputs not-text" placeholder="Name">
-                <input type="email" class="inputs not-text" placeholder="Email address">
-                <textarea rows="6" class="inputs" placeholder="Type message..."></textarea>
-            </div>
-            <div id="sendbtn" class="d-flex flex-row btnrow">
-                <div class="sbtn"></div>
-                <button id="sbtn" type="button" class="sbtn py-3">SEND  <i class="far fa-paper-plane"></i></button>
-            </div>
+        <div id="contactform">
+            <form action="">
+                <div id="contactinput" class="container-md d-flex flex-column justify-content-center">
+                    <p class="mb-1">Have a question?</p>
+                    <input type="email" class="inputs not-text" placeholder="Name">
+                    <input type="email" class="inputs not-text" placeholder="Email address">
+                    <textarea rows="6" class="inputs" placeholder="Type message..."></textarea>
+                </div>
+                <div id="sendbtn" class="container-md d-flex flex-row btnrow">
+                    <div class="sbtn"></div>
+                    <button id="sbtn" type="button" class="sbtn py-3">SEND  <i class="far fa-paper-plane"></i></button>
+                </div>
+            </form>
         </div>
     </div>
 
